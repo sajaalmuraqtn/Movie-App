@@ -3,26 +3,34 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle.js';
 import '../node_modules/@fortawesome/fontawesome-free/css/all.min.css';
 import './App.css';
-import Navbar from './Components/Navbar/Navbar';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import Layout from './Components/Layout/Layout';
+import Home from './Components/Home/Home';
+import NotFound from './Components/NotFound/NotFound';
+import Login from './Components/Login/Login';
+import Register from './Components/Register/Register';
+import Movies from './Components/Movies/Movies';
 
 function App() {
+
+  let routes=createBrowserRouter([{
+    path:'',element:<Layout/>,children:[
+      {index:true,element:<Home/>},
+      {path:'movies',element:<Movies/>},
+      {path:'login',element:<Login/>},
+      {path:'register',element:<Register/>},
+      {path:'*',element:<NotFound/>},
+    ]
+  }
+
+
+  ])
+
   return (
     <div className="App">
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
-      <Navbar/>
+     <RouterProvider router={routes}>
+
+     </RouterProvider>
     </div>
   );
 }
