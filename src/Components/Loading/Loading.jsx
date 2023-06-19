@@ -1,7 +1,9 @@
 import React from 'react'
-
+import './loadingStyle.css'
 export default function Loading() {
   return (
-    <div>Loading</div>
-  )
+
+    <span class="loader my-5"></span> 
+ 
+ )
 }
