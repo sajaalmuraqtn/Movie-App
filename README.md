@@ -1,7 +1,5 @@
 # Movie React App
 
-[Live Demo](https://skinelegance-ecommerce.onrender.com/)
-
 ## ✨ Project Overview
 **Movie Web** is a modern, responsive website built with **React**.  
 This project demonstrates my ability to create dynamic and interactive web applications using modern front-end technologies, focusing on both functionality and visual appeal.
