@@ -26,12 +26,12 @@ This project demonstrates my ability to create dynamic and interactive web appli
 
 ## 📸 Screenshots
 ### 🏠 Home Page
-![Home Page](./src/assets/home.png)
+![Home Page](./src/Assets/home.png)
 
 ### 📄 Register Page
-![Product Details](./src/assets/register.png)
+![Product Details](./src/Assets/register.png)
 
 ### 📄 Login Page
-![Product Details](./src/assets/login.png)
+![Product Details](./src/Assets/login.png)
  
  
